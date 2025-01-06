@@ -1,4 +1,4 @@
-# Implantação do Kubernetes para KubeNews
+# APLICAÇÃO KUBENEWS COM K8S
 
 Este repositório contém os manifestos do Kubernetes e o Dockerfile para implantação do aplicativo KubeNews e seu banco de dados PostgreSQL.
 
