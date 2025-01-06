@@ -3,6 +3,9 @@
 ### Objetivo
 O projeto Kube-news é uma aplicação escrita em NodeJS e tem como objetivo ser uma aplicação de exemplo pra trabalhar com o uso de containers.
 
+O Secret foi criado via linha de comando para manter boas práticas:
+kubectl create secret generic kubenews-secret --from-literal=DB_DATABASE=kubenews --from-literal=DB_USERNAME=kubenews --from-literal=DB_PASSWORD=Pg123 --from-literal=DB_HOST=postgresql --from-literal=POSTGRES_DB=kubenew --from-literal=POSTGRES_PASSWORD=Pg123 --from-literal=POSTGRES_USER=kubenews-secret
+
 ### Configuração
 Pra configurar a aplicação, é preciso ter um banco de dados Postgre e pra definir o acesso ao banco, configure as variáveis de ambiente abaixo:
 
