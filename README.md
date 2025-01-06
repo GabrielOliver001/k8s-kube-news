@@ -64,8 +64,7 @@ kubectl create secret generic kubenews-secret \
 
 4. **Aplique os manifestos do Kubernetes:**
    ```bash
-   kubectl apply -f postgresql-deployment.yaml
-   kubectl apply -f app-kubenews-deployment.yaml
+   kubectl apply -f deployment.yaml
    ```
 
 5. **Verifique as implantações:**
