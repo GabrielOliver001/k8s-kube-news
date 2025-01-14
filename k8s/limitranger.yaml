@@ -3,11 +3,25 @@ kind: LimitRange
 metadata: 
   name: limitranger-container
 spec:
-  limits:
+    limits:
     - type: Container
+      # Especifica que as limitações serão aplicadas no nível dos containers.
+      # Existem outros tipos possíveis, como 'Pod', mas aqui focamos nos containers.
+
       max: 
         cpu: 250m
+        # Define o limite máximo de CPU que um container pode usar.
+        # '250m' significa 250 millicores, ou 0.25 de um núcleo de CPU.
+
         memory: 250M
+        # Define o limite máximo de memória que um container pode usar.
+        # '250M' significa 250 megabytes de memória.
+
       min: 
         cpu: 100m
+        # Define o limite mínimo de CPU que um container deve ter.
+        # '100m' significa 100 millicores, ou 0.1 de um núcleo de CPU.
+
         memory: 100M
+        # Define o limite mínimo de memória que um container deve ter.
+        # '100M' significa 100 megabytes de memória.
