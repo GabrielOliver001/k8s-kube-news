@@ -1,7 +1,7 @@
 apiVersion: v1
-kind: LimitRanger
+kind: LimitRange
 metadata: 
-  name: rimitranger-container
+  name: limitranger-container
 spec:
   limits:
     - type: Container
