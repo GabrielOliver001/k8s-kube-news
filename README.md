@@ -108,30 +108,6 @@ EXPOSE 8080
 CMD ["node", "server.js"]
 ```
 
-## Variáveis de Ambiente
-
-As implantações referenciam segredos através do `kubenews-secret`. Certifique-se de que o segredo contém as variáveis de ambiente necessárias tanto para o banco de dados PostgreSQL quanto para o aplicativo Node.js.
-
-Para configurar a aplicação, é preciso ter um banco de dados PostgreSQL. As variáveis de ambiente para definir o acesso ao banco são:
-
-- **DB_DATABASE**: Nome do banco de dados que será usado.
-- **DB_USERNAME**: Usuário do banco de dados.
-- **DB_PASSWORD**: Senha do usuário do banco de dados.
-- **DB_HOST**: Endereço do banco de dados.
-
-Exemplo de segredo:
-```yaml
-apiVersion: v1
-kind: Secret
-metadata:
-  name: kubenews-secret
-data:
-  POSTGRES_USER: <usuario-codificado-em-base64>
-  POSTGRES_PASSWORD: <senha-codificada-em-base64>
-  POSTGRES_DB: <nome-do-banco-codificado-em-base64>
-  APP_ENV: <ambiente-codificado-em-base64>
-```
-
 ## Acessando o Aplicativo
 
 Uma vez implantado, o aplicativo pode ser acessado através do serviço NodePort:
