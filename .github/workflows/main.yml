@@ -39,4 +39,4 @@ jobs:
         with:
           namespace: 'kubenews'
           manifests: ./k8s/deployment.yaml
-          images: 'gabrieloliver001/k8s-kube-news:v1.${{ github.run_number }}
+          images: gabrieloliver001/k8s-kube-news:v1.${{ github.run_number }}
