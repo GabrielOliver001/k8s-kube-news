@@ -17,7 +17,8 @@ jobs:
     - name: Build and push image
       uses: docker/build-push-action@v6.12.0
       with:
-        context: ./src/Dockerfile
+        context: ./src
+        file: ./src/Dockerfile
         push: true
         tags: |
           gabrieloliver001/k8s-kube-news:v1.${{ github.run_number }}
