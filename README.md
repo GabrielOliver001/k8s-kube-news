@@ -35,7 +35,7 @@ kubectl create secret generic kubenews-secret \
   --from-literal=DB_HOST=postgresql \
   --from-literal=POSTGRES_DB=kubenews \
   --from-literal=POSTGRES_PASSWORD=Pg123 \
-  --from-literal=POSTGRES_USER=kubenews-secret
+  --from-literal=POSTGRES_USER=kubenews
 ```
 
 ## Pré-requisitos
