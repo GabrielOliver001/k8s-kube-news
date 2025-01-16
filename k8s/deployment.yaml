@@ -55,7 +55,7 @@ spec:
     spec:
       containers:
       - name: app-kubenews
-        image: gabrieloliver001/k8s-kube-news:v1
+        image: gabrieloliver001/k8s-kube-news
         resources:
           limits:
             memory: "128Mi"
